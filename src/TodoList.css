@@ -1,0 +1,136 @@
+body {
+    background-color: #f0f4f8;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.ToDoList {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  }
+  
+ h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+input[type="text"]:focus {
+    border-color: #a1c4fd;
+  }
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: #8ec5fc;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-left: 10px;
+  }
+  
+button:hover {
+    background-color: #73a1fd;
+    transform: translateY(-2px);
+  }
+  
+button.remove {
+    background-color: #ff6b6b;
+  }
+  
+button.remove:hover {
+    background-color: #d9534f;
+  }
+button.complete {
+    background-color: #48c78e;
+  }
+  
+  button.complete:hover {
+    background-color: #3aa76d;
+  }
+select {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  select:focus {
+    border-color: #a1c4fd;
+  }
+  
+  select + select {
+    margin-left: 10px;
+  }
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-2px);
+  }
+  
+  li.completed span {
+    display: flex;
+    align-items: center;
+  }
+  
+  li.completed span::before {
+    content: '✔';
+    color: #48c78e;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  li span {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  li button {
+    margin-left: 10px;
+  }
+  
